@@ -22,4 +22,19 @@ public:
 	BinaryTree() {
 		ROOT = NULL; //Initializing ROOT to null
 	}
+
+	void insert(string element) //insert a node in the binary search tree
+	{
+		Node* newNode = new Node(element, NULL, NULL); //Alocate memory for the nenw node
+		newNode->info = element; //	Assign value to the data fied of the new node
+		newNode->leftchild = NULL; //Make the left child of the new node point to null
+		newNode->rightchild = NULL; //Make the right child of the new node point to NULL
+
+		Node* parent = NULL;
+		Node* currentNode = NULL;
+		search (element, parent, currentNode); //Locaete the node which will be the parent of the node to be insserted
+
+
+	}
+
 };
