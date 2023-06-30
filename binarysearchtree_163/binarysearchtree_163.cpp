@@ -3,5 +3,15 @@
 using namespace std;
 
 class Node {
-	public
+public:
+	string info;
+	Node* leftchild;
+	Node* rightchild;
+
+	//Constructur for the node class
+	Node(string i, Node* l, Node* r) {
+		info = i;
+		leftchild = l;
+		rightchild = r;
+	}
 };
