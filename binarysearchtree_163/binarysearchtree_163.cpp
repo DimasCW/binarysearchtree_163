@@ -50,4 +50,15 @@ public:
 		}
 	}
 
+	void search(string element, Node*& parent, Node*& currentNode) {
+		//this function searches the currentnode of the specified node as well as the current node of its parent
+		currentNode = ROOT;
+		parent == NULL;
+		while (()&&()
+		{
+
+		}
+
+	}
+
 };
